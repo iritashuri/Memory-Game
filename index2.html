@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset='utf-8'>
+    <title>Memory game</title>
+    <link rel='stylesheet' href="style.css">
+</head>
+
+<body>
+
+    <section id="currentGame">
+        <table id="users">
+            <tr id="PlayersName">
+                <th id="names">players</th>
+                <th id="player1"></th>
+                <th id="player2"></th>
+            </tr>
+            <tr id="PlayersScores">
+                <th id="scoresnum">scores</th>
+                <th id="scores1">
+                </th>
+                <th id="scores2"></th>
+            </tr>
+            <tr id="PlayersScores">
+                <th id="winsnum">wins</th>
+                <th id="wins1">
+                </th>
+                <th id="wins2"></th>
+            </tr>
+        </table>
+        <form method="GET" onsubmit="restartGame(event)">
+            <button id="restart-game" class="btn" type="submit">New Game</button>
+        </form>
+
+    </section>
+
+    <section class="memory-game" id="small">
+        <div class="memory-card-small" data-framework="card1" id="100">
+            <div class="back-face" id="font10">
+                <div class="emoji9">
+                    <div class="emoji_face9">
+                        <div class="emoji_brow9"></div>
+                        <div class="emoji_eye9"></div>
+                        <div class="emoji_mouth9"></div>
+                    </div>
+                </div>
+            </div>
+            <img class="front-face" id="font0" src="img/back2.jpg">
+        </div>
+        <div class="memory-card-small" data-framework="card1" id="101">
+            <div class="back-face" id="font11">
+                <div class="emoji9">
+                    <div class="emoji_face9">
+                        <div class="emoji_brow9"></div>
+                        <div class="emoji_eye9"></div>
+                        <div class="emoji_mouth9"></div>
+                    </div>
+                </div>
+            </div>
+            <img class="front-face" id="font1" src="img/back2.jpg">
+        </div>
+        <div class="memory-card-small" data-framework="card2" id="102">
+            <div class="back-face" id="font11">
+                <div class="emoji9">
+                    <div class="face9">
+                        <div class="eyes9"></div>
+                        <div class="mouth9">
+                            <div class="tongue9"></div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <img class="front-face" id="font2" src="img/back2.jpg">
+        </div>
+        <div class="memory-card-small" data-framework="card2" id="103">
+            <div class="back-face" id="font10">
+                <div class="emoji9">
+                    <div class="face9">
+                        <div class="eyes9"></div>
+                        <div class="mouth9">
+                            <div class="tongue9"></div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <img class="front-face" id="font3" src="img/back2.jpg">
+        </div>
+        <div class="memory-card-small" data-framework="card3" id="104">
+            <img class="back-face" src="img/3.PNG">
+            <img class="front-face" id="font4" src="img/back2.jpg">
+        </div>
+        <div class="memory-card-small" data-framework="card3" id="105">
+            <img class="back-face" src="img/3.PNG">
+            <img class="front-face" id="font5" src="img/back2.jpg">
+        </div>
+        <div class="memory-card-small" data-framework="card4" id="106">
+            <img class="back-face" src="img/4.PNG">
+            <img class="front-face" id="font6" src="img/back2.jpg">
+        </div>
+        <div class="memory-card-small" data-framework="card4" id="107">
+            <img class="back-face" src="img/4.PNG">
+            <img class="front-face" id="font7" src="img/back2.jpg">
+        </div>
+        <div class="memory-card-small" data-framework="card5" id="108">
+            <img class="back-face" src="img/5.PNG">
+            <img class="front-face" id="font8" src="img/back2.jpg">
+        </div>
+    </section>
+
+    <section>
+        <div id="winner" onclick="winnerOff()">
+            <div id="textwin">Text check</div>
+        </div>
+
+    </section>
+
+    <button class="back-btn" onclick="backToMain()">Back To Main Page </button>
+
+    <script src="helper.js"></script>
+    <script src="users.js"></script>
+    <script src="scripts.js"></script>
+    <script src="GamePage.js"></script>
+</body>
+
+</html>

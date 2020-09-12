@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset='utf-8'>
+    <title>Memory game</title>
+    <link rel='stylesheet' href="style.css">
+</head>
+
+<body>
+    <header id="title">
+        <h1>Welcom To The Memory Game</h1>
+    </header>
+    <center>
+        <section>
+            <form class="players" method="GET" onsubmit="startGame(event)">
+                <label for="fname">Enter first player name:</label><br>
+                <input class="player-name" type="text" id="fname"><br><br>
+                <label for="sname">Enter second player name:</label><br>
+                <input class="player-name" type="text" id="sname"><br>
+                <button class="btn" type="submit" onclick="setGameKing(16)">Start Play With 16 cards</button>
+                <button class="btn" type="submit" onclick="setGameKing(9)">Start Play With 9 cards</button>
+            </form>
+        </section>
+        <section>
+            <button class="btn" type="submit" id="alls" onclick="showNumOfWinAll()">all players</button>
+        </section>
+        <script src="helper.js"></script>
+        <script src="users.js"></script>
+        <script src="scripts.js"></script>
+    </center>
+</body>
+
+</html>
