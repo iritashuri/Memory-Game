@@ -1,3 +1,3 @@
 # Memory-Game
-A memory game including docomatation of players and victories.
+A memory game including players and victories docomatation.
 Using Local storage.
